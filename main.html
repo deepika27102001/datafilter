@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="filter-container">
+        <select id="metriselect" class="js1">
+            <option disabled selected>Select metric</option>
+            <option value="Accounts Payables (Annual)">Accounts Payables (Annual)</option>
+            <option value="Accounts Payables (Quarter)">Accounts Payables (Quarter)</option>
+            <option value="Accounts Payables (TTM)">Accounts Payables (TTM)</option>
+            <option value="Accumulated Other Comprehensive Income (Annual)">Accumulated Other Comprehensive Income (Annual)</option>
+        </select>
+
+        <select id="conditionSelect" class="js2">
+            <option disabled selected>Select operator</option>
+            <option value="Greater than">Greater than</option>
+            <option value="Greater than or equal to">Greater than or equal to</option>
+            <option value="Less than">Less than</option>
+            <option value="Less than or equal t">Less than or equal to</option>
+            <option value="Equal to">Equal to</option>
+        </select>
+
+        <input type="number" id="value" placeholder="Enter value">
+
+        <select id="unit" class="js3">
+            <option disabled selected>Select units</option>
+            <option value="one">One</option>
+            <option value="million">Million</option>
+            <option value="billion">Billion</option>
+            <option value="thousand">Thousand</option>
+        </select>
+    </div>
+
+    <table border="0"></table>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
