@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropdown with Search</title>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,10 +16,10 @@
     <div class="filter-container">
         <select id="metriselect" class="js1">
             <option disabled selected>Select metric</option>
-            <option value="Accounts Payables (Annual)">Accounts Payables (Annual)</option>
+            <!-- <option value="Accounts Payables (Annual)">Accounts Payables (Annual)</option>
             <option value="Accounts Payables (Quarter)">Accounts Payables (Quarter)</option>
             <option value="Accounts Payables (TTM)">Accounts Payables (TTM)</option>
-            <option value="Accumulated Other Comprehensive Income (Annual)">Accumulated Other Comprehensive Income (Annual)</option>
+            <option value="Accumulated Other Comprehensive Income (Annual)">Accumulated Other Comprehensive Income (Annual)</option> -->
         </select>
 
         <select id="conditionSelect" class="js2">
@@ -39,10 +41,16 @@
             <option value="thousand">Thousand</option>
         </select>
     </div>
+    
 
-    <table border="0"></table>
+<div class="table-container">
+    <table id="dataTable" border="1" ></table>
+</div>
+   
 
    <script src="script.js"></script>
+
+   <script src="dropdown.js"></script>
 </body>
 
 </html>
